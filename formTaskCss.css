@@ -1,0 +1,124 @@
+/* body{
+    width:60%;
+    position:relative;
+    border:1px solid #73AD21;
+    position:absolute;
+    left: 20%;
+    margin:20px;
+} */
+
+body{
+        max-width: 60%;
+        margin: auto;
+        background:white;
+        padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+
+#fname, #lname{
+    width: 90%;
+}
+#email{
+    width: 60%;
+}
+.email{
+    padding-bottom: 20px;
+}
+.name{
+    display:flex;
+    padding-bottom: 10px;
+}
+.name div:nth-child(2){
+    padding-left: 20px;
+}
+.name label{
+    font-size: small;
+    font-weight: normal;
+}
+
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+caption, label{
+
+    text-align: left;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+td{
+    /* border: 1px solid #dddddd; */
+    text-align:center;
+    padding: 10px;
+   
+  }
+  
+td label{
+    font-weight: normal;
+}
+
+.likely label{
+    width:20px;
+}
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+input[type="submit"]{
+    width: 100px;
+    padding: 10px;
+    font-size: large;
+}
+
+/* p{
+    font font-weight: ;
+} */
+
+/* 5star */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    top:-15px;
+    width: 1em;
+    font-size: 30px;
+    /* color: #FFD600; */
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}

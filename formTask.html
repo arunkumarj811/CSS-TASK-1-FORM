@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="formTaskCss.css" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <label>Name <span style="color: red">*</span></label><br>
+        <div class="name">
+
+            <div>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="fname">First</label>
+            </div>
+            <div>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">Last</label>
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email <span style="color: red">*</span></label><br>
+            <input type="email" id="email" name="email" maxlength="50">
+        </div>
+        <div>
+            <label>Your Experience<span style="color: red">*</span></label>
+            <div class="rating">
+                <input type="radio" name="rating" value="5" id="5">
+                <label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4">
+                <label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3">
+                <label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2">
+                <label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1">
+                <label for="1">☆</label>
+            </div>
+            <p>Overall, How would you rate your experience with us?</p>
+        </div>
+        <div>
+            <table class="satisfaction">
+                <caption>How satisfied are you with <span style="color: red">*</span></caption>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><label for="veryUnsatisfied">Very Unsatisfied</label></td>
+                    <td><label for="unsatisfied">Unsatisfied</label></td>
+                    <td><label for="neutral">neutral</label></td>
+                    <td><label for="satisfied">Satisfied</label></td>
+                    <td><label for="verySatisfied">Very Satisfied</label></td>
+                </tr>
+                <tr>
+                    <td>Purchase</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="purchase" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="purchase" value="2"></td>
+                    <td><input type="radio" id="neutral" name="purchase" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="purchase" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="purchase" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="Service" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="Service" value="2"></td>
+                    <td><input type="radio" id="neutral" name="Service" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="Service" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="Service" value="5"></td>
+                </tr>
+                <tr>
+                    <td>CompanyOverall</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="CompanyOverall" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="CompanyOverall" value="2"></td>
+                    <td><input type="radio" id="neutral" name="CompanyOverall" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="CompanyOverall" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="CompanyOverall" value="5"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="likely">
+                <caption>How likely are you to <span style="color: red">*</span></caption>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><label for="veryUnsatisfied">Very Unsatisfied</label></td>
+                    <td><label for="unsatisfied">Unsatisfied</label></td>
+                    <td><label for="neutral">neutral</label></td>
+                    <td><label for="satisfied">Satisfied</label></td>
+                    <td><label for="verySatisfied">Very Satisfied</label></td>
+                </tr>
+                <tr>
+                    <td>Buy from us again</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="buyAgain" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="buyAgain" value="2"></td>
+                    <td><input type="radio" id="neutral" name="buyAgain" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="buyAgain" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="buyAgain" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our<br> product to others</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="recommendProduct" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="recommendProduct" value="2"></td>
+                    <td><input type="radio" id="neutral" name="recommendProduct" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="recommendProduct" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="recommendProduct" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our <br>company to others</td>
+                    <td><input type="radio" id="veryUnsatisfied" name="recommendCompany" value="1"></td>
+                    <td><input type="radio" id="unsatisfied" name="recommendCompany" value="2"></td>
+                    <td><input type="radio" id="neutral" name="recommendCompany" value="3"></td>
+                    <td><input type="radio" id="satisfied" name="recommendCompany" value="4"></td>
+                    <td><input type="radio" id="verySatisfied" name="recommendCompany" value="5"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p style="font-weight: bold;">Additional comments or suggestions</p>
+            <textarea name="comment"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+
+</html>
